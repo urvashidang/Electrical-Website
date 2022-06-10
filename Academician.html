@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Academician Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/Common_button.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+	
+	<style type="text/css">
+
+		.Professors{
+			margin: 100px auto;
+		}
+		.Professors h1{ 
+			text-align: center;
+			padding-bottom: 7px;
+			color: #fff;
+		}
+		.Professors h1::after
+		{ 
+			content: '';
+			display:block;
+			height: 3px;
+			width: 170px;
+			margin: 10px auto 5px;
+			background: #fff;
+		}
+		.Professors .row{ 
+			margin-top: 30px;
+		}
+		.col-lg-4,.col-md-6{
+			margin: 40px auto;
+		}
+		.profile{
+			padding: 70px 10px 10px;
+			background: #efefef;
+		}
+		.profile img{
+			top: -60px;
+			position: absolute;
+			left: calc(50% - 60px);
+			border:10px solid white;	
+		}
+		.user{
+			max-width: 120px;
+			height: 120px;
+			border-radius: 50%;
+		}
+		.profile h3{
+			font-size: 20px;
+			margin-top: 15px;
+		}
+		.profile h3 span{
+			font-size: 12px;
+			word-spacing:3px;
+			margin: 5px auto;
+			color: #333;
+		}
+		.profile blockquote{
+			font-size: 16px;
+			line-height: 30px;
+		}
+		.profile blockquote::before{
+			font-size: 50px;
+			position: relative;
+			color: white;
+			line-height: 20px;
+			bottom: -15px;
+			right: 5px;
+		}
+		#HEAD{
+			box-shadow:0 0 15px 8px rgba(0,0,0,0.2);
+		}
+		#HEAD:hover{
+			box-shadow: 0 0 4px 3px rgba(145,66,13,0.2);
+		}
+		.col-lg-4 :hover{
+			box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+		}
+		.profile blockquote:hover{
+			box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+		}
+		.profile blockquote h3:hover{
+			box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+		}
+		.profile blockquote h3 span:hover{
+			box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+		}
+		.profile blockquote a{
+			color: black;
+		}
+		.profile blockquote a{
+			text-decoration: none;
+		}
+		.col-md-6 a:hover p{
+			text-decoration: none;
+			box-shadow: 0 0 0 0 rgba(0,0,0,0.2);	
+			color: #985644;
+		}
+		.profile :hover span{
+			animation: bounceOut 1s;
+		}
+		.profile :hover h3{
+			animation: bounceIn 1s;
+		}
+		.profile a:hover .profile :hover h3{
+			color: #985644;
+
+		}
+		.Second{
+			display: none;
+		}
+		body { background: #392338;}
+	</style>
+}
+}
+</head>
+<body>
+<section class="Professors">
+	<div class="menu">
+  <input type="checkbox" id="toggle" />
+  <label id="show-menu" for="toggle">
+    <div class="btn">
+      <i class=" fas fa-bars toggleBtn menuBtn" style="font-size: 25px"></i>
+      <i class="fas fa-times toggleBtn closeBtn" style="font-size: 25px"></i>
+    </div>
+    <div class="btn">
+    </div>
+    <div class="btn">
+    </div>
+    <div class="btn">
+      <a href=""><i class="fas fa-user-tie" style="font-size: 14px; color:#392338; "> Other Faculties</i></a>
+    </div>
+    <div class="btn">
+      <a href=""><i class="fas fa-home" style="font-size: 14px;color:#392338;"> Home</i></a>
+    </div>
+    <div class="btn">
+      <a href=""><i class="fas fa-user-graduate" style="font-size: 14px;color:#392338;"> Phdians</i></a>
+    </div>
+    <div class="btn">
+    </div>
+    <div class="btn">
+    </div>
+    <div class="btn">
+    </div>
+  </label>
+</div>
+	<div class="container">
+	<h1>Meet Assistant Professors</h1>
+	<div class="row">
+		<div class="col-lg-4 col-md-6  text-center First animated backInLeft delay-.1s">
+			<div class="profile">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+		<div class="col-lg-4 col-md-6 text-center" >
+			<div class="profile" id="HEAD">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+
+		<div class="col-lg-4 col-md-6  text-center Second">
+			<div class="profile">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+		<div class="col-lg-4 col-md-6 text-center animated backInRight delay-.1s">
+			<div class="profile">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+		<div class="col-lg-4 col-md-6 text-center">
+			<div class="profile">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+		<div class="col-lg-4 col-md-6 text-center  animated backInUp delay-.1s">
+			<div class="profile">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+		<div class="col-lg-4 col-md-6 text-center">
+			<div class="profile">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+		<div class="col-lg-4 col-md-6 text-center" data-aos="fade-right">
+			<div class="profile">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+		<div class="col-lg-4 col-md-6 text-center" data-aos="fade-up">
+			<div class="profile">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+		<div class="col-lg-4 col-md-6 text-center " data-aos="fade-left">
+			<div class="profile">
+				<img src="Images/2000.jpg" class="user">
+				<blockquote>	<h3>Prabhakar D<br><span> HEAD OF DEPARTMENT</span></h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<a href="urvashidang2012@gmail.com" class="AB"><p>Contact Prabhakar D</p></a></blockquote>
+			</div>	
+		</div>
+</div>	
+</div>
+</div>
+</div>
+</section>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript">
+    AOS.init();
+  </script>
+<script type="text/javascript">
+	var a=document.getElementsByClassName('AB');
+	var i;
+	for(i=0;i<a.length;i++){
+		a[i].addEventListener('mouseover', function(){
+			this.classList.toggle('active_b');
+			var panel=this.nextElementSibling;
+			panel.classList.toggle('display');
+		});}
+
+</script>
+</body>
+</html>
